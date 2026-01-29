@@ -71,6 +71,7 @@
   "keyToString": {
     "Application.PRINCIPAU.executor": "Run",
     "Application.Principal.executor": "Run",
+    "Application.PrincipalComBusca.executor": "Run",
     "Application.PrincipalListas.executor": "Run",
     "Application.Versao.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -81,10 +82,23 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.appearance"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PrincipalComBusca">
+    <configuration name="PrincipalComBusca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.alura.screenmatch.principal.PrincipalComBusca" />
+      <module name="Screen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.alura.screenmatch.principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrincipalListas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.alura.screenmatch.PrincipalListas" />
       <module name="Screen" />
@@ -100,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrincipalComBusca" />
         <item itemvalue="Application.PrincipalListas" />
       </list>
     </recent_temporary>

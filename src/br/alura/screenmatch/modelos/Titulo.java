@@ -1,12 +1,10 @@
 package br.alura.screenmatch.modelos;
 
 
-import com.google.gson.annotations.SerializedName;
+import br.alura.screenmatch.excecao.ErroDeConversaoDeAnoException;
 
 public class Titulo implements Comparable <Titulo> {
-    @SerializedName("Title")
     private String nome;
-    @SerializedName("Year")
     private int anoDeLancamento;
     private int duracaoEmMinutos;
     private boolean incluidoNoPlano;
@@ -20,6 +18,13 @@ public class Titulo implements Comparable <Titulo> {
 
     public Titulo(TituloOmdb meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
+
+       if (meuTituloOmdb.year().length() > 4){
+           throw new ErroDeConversaoDeAnoException("Não foi possível converter" +
+                   " o ano para número inteiro: " );
+       }
+
+
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
     }
